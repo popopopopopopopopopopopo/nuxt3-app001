@@ -1,13 +1,13 @@
 <template>
   <div>
-    <q-btn :label="label" :onclick="showalert"/>
-    <q-input filled v-model="value" />
+    <el-button v-text="label" type="primary" :onclick="showalert" />
+    <el-input v-model="value" placeholder="Please input" />
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "quasarpractice",
+  name: "elementpluspractice",
   data : function () {
     return {
       label : "hogehoge",
