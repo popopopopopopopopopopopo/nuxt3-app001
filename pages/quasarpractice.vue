@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-btn :label="label" />
+    <q-btn :label="label" :onclick="showalert"/>
     <q-input filled v-model="value" />
   </div>
 </template>
@@ -12,6 +12,11 @@ export default {
     return {
       label : "hogehoge",
       value : "hage~~~~~"
+    }
+  },
+  methods : {
+    showalert() {
+      alert("foobar");
     }
   }
 }
