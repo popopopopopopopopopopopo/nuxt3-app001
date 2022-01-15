@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     target:"static",
     // UI framework 用の CSS の参照パス
     css: [
-        'quasar/dist/quasar.prod.css'
+        'element-plus/dist/index.css'
+       // 'quasar/dist/quasar.prod.css'
     ],
 })
