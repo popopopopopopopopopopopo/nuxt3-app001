@@ -77,6 +77,19 @@
 </template>
 
 <script lang="ts">
+
+class Person {
+  Name:string
+  Age:number
+  constructor(name:string, age:number) {
+    this.Name = name;
+    this.Age = age;
+  }
+  show() :string {
+    return this.Name + this.Age;
+  }
+}
+
 export default {
   name: "elspa",
   data : function () {
@@ -87,7 +100,7 @@ export default {
   },
   methods : {
     showalert() {
-      alert("foobar");
+      alert(new Person("hogehoge", 102).show());
     }
   }
 }
